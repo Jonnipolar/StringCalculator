@@ -7,3 +7,7 @@ it("Should return zero on an empty string", () => {
 it("Should return number if only one number is inserted", () => {
     expect(add("5")).toBe(5);
 });
+
+it("Should return the sum of two numbers inserted and devided by , ", () => {
+    expect(add("1,2")).toBe(3);
+});
