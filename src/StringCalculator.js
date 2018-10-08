@@ -16,7 +16,9 @@ function add(number){
         return sum(numberArray);
     
     } else {
-        
+        if(parseInt(number) > 1000) {
+            return 0;
+        }
         return parseInt(number);
     
     }
@@ -29,7 +31,10 @@ function sum(numberArray) {
            if(numberArray[i] < 0) {
                 negativeNumbers += numberArray[i] + "";
            }
-            total += parseInt(numberArray[i]);
+           if(numberArray[i] <= 1000){
+               
+               total += parseInt(numberArray[i]);
+           }
         }
         if(negativeNumbers != "") {
             throw "Negatives not allowed: " + negativeNumbers;

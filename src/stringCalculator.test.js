@@ -26,3 +26,11 @@ it("Should return error on negative input ", () => {
     }
         expect(negativeNumbers).toThrowError(/^Negatives not allowed: -2-3$/);
 });
+
+it("Should return the sum of multaple numbers inserted and devided by , ", () => {
+    expect(add("1001,2,3")).toBe(5);
+});
+
+it("Should return zero if input is higher then 1000", () => {
+    expect(add("1001")).toBe(0);
+});
