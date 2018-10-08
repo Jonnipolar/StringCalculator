@@ -34,3 +34,7 @@ it("Should return the sum of multaple numbers inserted and devided by , ", () =>
 it("Should return zero if input is higher then 1000", () => {
     expect(add("1001")).toBe(0);
 });
+
+it("Should return the sum of the numbers using a new delimiter", () => {
+    expect(add("//;\n1;2;3")).toBe(6);
+});
