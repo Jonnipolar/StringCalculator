@@ -11,3 +11,7 @@ it("Should return number if only one number is inserted", () => {
 it("Should return the sum of two numbers inserted and devided by , ", () => {
     expect(add("1,2")).toBe(3);
 });
+
+it("Should return the sum of multaple numbers inserted and devided by , ", () => {
+    expect(add("1,2,3")).toBe(6);
+});
