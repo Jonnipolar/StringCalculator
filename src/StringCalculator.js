@@ -9,6 +9,9 @@ function add(number){
         
         return sum(numberArray);
     
+    } else if(number.includes("\n")) {
+        var numberArray = number.split("\n");
+        return sum(numberArray);
     } else {
         
         return parseInt(number);
